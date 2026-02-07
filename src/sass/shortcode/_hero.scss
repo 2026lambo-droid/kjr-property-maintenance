@@ -1,0 +1,234 @@
+/*--------------------------------------------------------------
+  10. Hero
+----------------------------------------------------------------*/
+.cs_circle_group {
+  display: flex;
+  padding-left: 10px;
+  span {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--white-color);
+    margin-left: -10px;
+    &:first-child {
+      transition: all 0.65s ease;
+    }
+    &:last-child {
+      transition: all 0.45s ease;
+    }
+  }
+}
+.cs_hero.cs_style_1 {
+  position: relative;
+  background-color: var(--heading-color);
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+    background: linear-gradient(
+      125deg,
+      rgba(36, 51, 34, 0.72) 0%,
+      rgba(36, 51, 34, 0.5) 38%,
+      rgba(36, 51, 34, 0.42) 65%,
+      rgba(36, 51, 34, 0.62) 100%
+    );
+  }
+  .cs_hero_in {
+    min-height: 780px;
+    padding: 150px 0;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .cs_hero_eyebrow {
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    opacity: 0.95;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  .cs_hero_title {
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    b {
+      font-weight: 600;
+    }
+  }
+  .cs_hero_subtitle {
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    opacity: 0.95;
+    max-width: 770px;
+    @media (max-width: 1400px) {
+      max-width: 690px;
+    }
+    @media (max-width: 1400px) {
+      max-width: 620px;
+    }
+  }
+  .cs_hero_text {
+    max-width: 1020px;
+    position: relative;
+    z-index: 2;
+    margin-right: 260px;
+    @media (max-width: 1400px) {
+      max-width: 750px;
+      margin-right: 240px;
+    }
+    @media (max-width: 1199px) {
+      margin-right: 220px;
+    }
+  }
+  .cs_hero_btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 22px;
+    align-items: center;
+  }
+  .cs_hero_funfact_wrap {
+    border-radius: 16px;
+    position: absolute;
+    top: 166px;
+    right: 0;
+    overflow: hidden;
+    padding: 1px;
+    max-width: 220px;
+    @media (max-width: 991px) {
+      display: none;
+    }
+    &:hover {
+      .cs_circle_group {
+        span {
+          &:first-child {
+            transform: translateX(60px);
+          }
+          &:last-child {
+            transform: translateX(-60px);
+          }
+        }
+      }
+    }
+  }
+  .cs_hero_funfact {
+    border-radius: inherit;
+    padding: 14px 12px 16px;
+    box-shadow: -2px 0px 7px 0px rgb(255 255 255 / 50%);
+    * {
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    }
+    h3:empty {
+      display: none;
+    }
+    .cs_fs_20,
+    .cs_mb_16 {
+      font-size: 0.875rem !important;
+      line-height: 1.35;
+      margin-bottom: 8px !important;
+    }
+    h3.cs_fs_24 {
+      font-size: 1rem !important;
+    }
+    .cs_hero_funfact_indicators {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .cs_hero_funfact_item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      opacity: 0.9;
+    }
+    .cs_hero_funfact_icon {
+      color: white;
+      flex-shrink: 0;
+    }
+    .cs_hero_funfact_item_text {
+      font-size: 0.75rem;
+      line-height: 1.3;
+    }
+  }
+  .cs_hero_box {
+    padding: 24px;
+    padding-right: 56px;
+    position: absolute;
+    bottom: 64px;
+    right: 0;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: linear-gradient(
+      241deg,
+      rgba(255, 255, 255, 0.5) -7.37%,
+      rgba(255, 255, 255, 0.1) 89.52%
+    );
+    backdrop-filter: blur(5px);
+    * {
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
+    }
+    width: 410px;
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+  .cs_hero_box_contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .cs_hero_box_contact {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    line-height: 1.35;
+  }
+  .cs_hero_box_contact_label {
+    font-size: 0.8125rem;
+    opacity: 0.9;
+    color: var(--white-color);
+  }
+  .cs_hero_box_contact_tel {
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    opacity: 1;
+    transition: opacity 0.2s ease;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+  .cs_hero_box_btn {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+  }
+  .container {
+    position: relative;
+    z-index: 3;
+  }
+  .cs_hero_bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    .cs_slider,
+    .cs_slider_container,
+    .cs_slider_wrapper,
+    .slick-list,
+    .slick-track,
+    .slick-track * {
+      height: 100%;
+    }
+  }
+  .cs_slide {
+    height: 100%;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}

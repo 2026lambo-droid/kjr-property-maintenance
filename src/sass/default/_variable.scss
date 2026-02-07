@@ -1,0 +1,21 @@
+/*--------------------------------------------------------------
+  KJR Property Maintenance – optimized palette
+  Primary: confident green (trust + cleanliness). Accent: clear warm gold (CTAs, focus).
+  Contrast tuned for readability and WCAG-friendly use.
+----------------------------------------------------------------*/
+:root {
+  --white-color: #ffffff;
+  --heading-color: #243322;
+  --body-color: rgba(36, 51, 34, 0.78);
+  --gray-color: #f0f3f1;
+  --border-color: rgba(36, 51, 34, 0.1);
+  --primary: #243322;
+  --accent: #b8923e;
+  --accent-hover: #9a7a32;
+  --heading-font: "Plus Jakarta Sans", sans-serif;
+  --body-font: "DM Sans", sans-serif;
+  /* Image overlays – consistent depth (match primary) */
+  --overlay-hero: rgba(36, 51, 34, 0.55);
+  --overlay-cta: rgba(36, 51, 34, 0.65);
+  --overlay-card: rgba(0, 0, 0, 0.45);
+}
