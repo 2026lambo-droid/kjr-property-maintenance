@@ -57,22 +57,22 @@ export const CTA_BG = {
   url: img("cta_bg.png"),
 };
 
-/** Service cards (home + service page) */
+/** Service cards – only hero_main + pressure_washing (no day_porter/graffiti/junk files that may be wrong on live). */
 export const SERVICE_CARDS = {
-  dayPorter: img("day_porter.png"),
+  dayPorter: img("hero_main.png"),
   parkingLot: PARKING_LOT_IMAGE,
   pressureWashing: img("pressure_washing.png"),
-  graffitiRemoval: img("graffiti_services.png"),
-  junkRemoval: img("junk_removal.png"),
+  graffitiRemoval: img("hero_main.png"),
+  junkRemoval: img("hero_main.png"),
 };
 
 /** Service page cards (same as SERVICE_CARDS) */
 export const SERVICE_PAGE_CARDS = {
-  dayPorter: img("day_porter.png"),
+  dayPorter: img("hero_main.png"),
   parkingLot: PARKING_LOT_IMAGE,
   pressureWashing: img("pressure_washing.png"),
-  graffitiRemoval: img("graffiti_services.png"),
-  junkRemoval: img("junk_removal.png"),
+  graffitiRemoval: img("hero_main.png"),
+  junkRemoval: img("hero_main.png"),
 };
 
 /** Feature / Why Choose section – use hero (no window cleaning assets) */
@@ -83,27 +83,27 @@ export const ABOUT_IMAGE = img("hero_main.png");
 /** About page */
 export const ABOUT_PAGE_IMAGE = img("hero_main.png");
 
-/** Service detail hero images */
+/** Service detail hero images – only hero_main + pressure_washing (no wrong files). */
 export const SERVICE_DETAIL_HERO = {
-  dayPorter: img("day_porter.png"),
-  dayPorter2: img("day_porter_2.png"),
+  dayPorter: img("hero_main.png"),
+  dayPorter2: img("hero_main.png"),
   parkingLot: PARKING_LOT_IMAGE,
   pressureWashing: img("pressure_washing.png"),
   pressureWashing2: img("pressure_washing_2.png"),
   pressureWashing3: img("pressure_washing_3.png"),
-  graffitiRemoval: img("graffiti_services.png"),
-  junkRemoval: img("junk_removal.png"),
+  graffitiRemoval: img("hero_main.png"),
+  junkRemoval: img("hero_main.png"),
 };
 
-/** Gallery grid – pressure washing slots use only the 3 pressure washing images. */
+/** Gallery – only hero_main + pressure_washing (no wrong files). */
 export const GALLERY = [
-  { imgSrc: img("day_porter.png"), imageSrc: img("day_porter.png"), title: "Day Porter & Common Areas", year: "2024", height: "394px" },
+  { imgSrc: img("hero_main.png"), imageSrc: img("hero_main.png"), title: "Day Porter & Common Areas", year: "2024", height: "394px" },
   { imgSrc: img("pressure_washing.png"), imageSrc: img("pressure_washing.png"), title: "Pressure Washing", year: "2024", height: "383px" },
   { imgSrc: img("pressure_washing_2.png"), imageSrc: img("pressure_washing_2.png"), title: "Pressure Washing", year: "2024", height: "383px" },
   { imgSrc: img("pressure_washing_3.png"), imageSrc: img("pressure_washing_3.png"), title: "Exterior Cleaning", year: "2024", height: "383px" },
-  { imgSrc: img("junk_removal.png"), imageSrc: img("junk_removal.png"), title: "Lot Maintenance", year: "2024", height: "287px" },
+  { imgSrc: img("hero_main.png"), imageSrc: img("hero_main.png"), title: "Lot Maintenance", year: "2024", height: "287px" },
   { imgSrc: img("pressure_washing.png"), imageSrc: img("pressure_washing.png"), title: "Exterior Cleaning", year: "2024", height: "480px" },
-  { imgSrc: img("day_porter_2.png"), imageSrc: img("day_porter_2.png"), title: "Property Maintenance", year: "2024", height: "190px" },
+  { imgSrc: img("hero_main.png"), imageSrc: img("hero_main.png"), title: "Property Maintenance", year: "2024", height: "190px" },
   { imgSrc: PARKING_LOT_IMAGE, imageSrc: PARKING_LOT_IMAGE, title: "Bay Area Service", year: "2024", height: "383px" },
 ];
 
@@ -113,36 +113,36 @@ export const AUTH_BG = img("hero_main.png");
 /** CardSection / half bg (contact, etc.) */
 export const CARD_BG = img("cta_bg.png");
 
-/** Blog post thumbnails – property maintenance */
-export const BLOG_POST_IMAGE = img("day_porter.png");
-export const BLOG_POST_IMAGES = [img("day_porter.png"), img("day_porter_2.png"), img("pressure_washing.png"), PARKING_LOT_IMAGE];
+/** Blog post thumbnails – only hero_main + pressure_washing */
+export const BLOG_POST_IMAGE = img("hero_main.png");
+export const BLOG_POST_IMAGES = [img("hero_main.png"), img("hero_main.png"), img("pressure_washing.png"), PARKING_LOT_IMAGE];
 
-/** FAQ accordion images – maintenance relevant */
-export const FAQ_IMAGE = img("day_porter.png");
+/** FAQ accordion images */
+export const FAQ_IMAGE = img("hero_main.png");
 export const FAQ_IMAGE_2 = img("pressure_washing.png");
 
-/** Team section – no window cleaning assets */
+/** Team section – only hero_main + pressure_washing */
 export const TEAM_IMAGES = [
   img("hero_main.png"),
-  img("day_porter.png"),
-  img("day_porter_2.png"),
+  img("hero_main.png"),
+  img("hero_main.png"),
   img("pressure_washing.png"),
   img("hero_main.png"),
 ];
 
-/** Project thumbs – no window cleaning assets (parking_lot_sweeping, about_family_sweeper). */
+/** Project thumbs – only hero_main + pressure_washing + cta_bg */
 export const PROJECT_THUMBS = [
-  img("day_porter.png"),
+  img("hero_main.png"),
   img("pressure_washing.png"),
   img("pressure_washing_2.png"),
   img("pressure_washing_3.png"),
-  img("junk_removal.png"),
   img("hero_main.png"),
-  img("day_porter_2.png"),
+  img("hero_main.png"),
+  img("hero_main.png"),
   PARKING_LOT_IMAGE,
   img("pressure_washing.png"),
-  img("graffiti_services.png"),
-  img("junk_removal.png"),
+  img("hero_main.png"),
+  img("hero_main.png"),
   img("cta_bg.png"),
   img("hero_main.png"),
 ];
