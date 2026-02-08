@@ -92,12 +92,12 @@ export const SERVICE_DETAIL_HERO = {
   junkRemoval: img("junk_removal.png"),
 };
 
-/** Gallery grid – all property-maintenance (same heights as original) */
+/** Gallery grid – all property-maintenance (same heights as original). No window cleaning; 2nd & 4th use pressure washing. */
 export const GALLERY = [
   { imgSrc: img("day_porter.png"), imageSrc: img("day_porter.png"), title: "Day Porter & Common Areas", year: "2024", height: "394px" },
-  { imgSrc: img("parking_lot_sweeping.png"), imageSrc: img("parking_lot_sweeping.png"), title: "Parking Lot Sweeping", year: "2024", height: "383px" },
   { imgSrc: img("pressure_washing.png"), imageSrc: img("pressure_washing.png"), title: "Pressure Washing", year: "2024", height: "383px" },
-  { imgSrc: img("graffiti_services.png"), imageSrc: img("graffiti_services.png"), title: "Commercial Cleaning", year: "2024", height: "383px" },
+  { imgSrc: img("pressure_washing.png"), imageSrc: img("pressure_washing.png"), title: "Pressure Washing", year: "2024", height: "383px" },
+  { imgSrc: img("pressure_washing.png"), imageSrc: img("pressure_washing.png"), title: "Exterior Cleaning", year: "2024", height: "383px" },
   { imgSrc: img("junk_removal.png"), imageSrc: img("junk_removal.png"), title: "Lot Maintenance", year: "2024", height: "287px" },
   { imgSrc: img("pressure_washing.png"), imageSrc: img("pressure_washing.png"), title: "Exterior Cleaning", year: "2024", height: "480px" },
   { imgSrc: img("day_porter_2.png"), imageSrc: img("day_porter_2.png"), title: "Property Maintenance", year: "2024", height: "190px" },
@@ -127,12 +127,12 @@ export const TEAM_IMAGES = [
   img("parking_lot_sweeping.png"),
 ];
 
-/** Project thumbs for Projects/Our Work page – property maintenance */
+/** Project thumbs for Projects/Our Work page – property maintenance. No window cleaning; 2nd & 4th use pressure washing. */
 export const PROJECT_THUMBS = [
   img("day_porter.png"),
-  img("parking_lot_sweeping.png"),
   img("pressure_washing.png"),
-  img("graffiti_services.png"),
+  img("pressure_washing.png"),
+  img("pressure_washing.png"),
   img("junk_removal.png"),
   img("about_family_sweeper.png"),
   img("day_porter_2.png"),

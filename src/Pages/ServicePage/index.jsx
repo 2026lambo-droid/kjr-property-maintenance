@@ -34,7 +34,7 @@ export default function ServicePage() {
       title: "Parking Lot Sweeping",
       description:
         "Sweeping to remove debris, leaves and litter to maintain a clean and safe appearance. <strong>Regular or Monthly.</strong>",
-      imgSrc: SERVICE_PAGE_CARDS.parkingLot,
+      imgSrc: SERVICE_PAGE_CARDS.pressureWashing,
       link: "/services/parking-lot-sweeping",
     },
     {
@@ -48,7 +48,7 @@ export default function ServicePage() {
       title: "Graffiti Removal",
       description:
         "Quick graffiti removal and cover-up so walls, fences, and surfaces look clean and professional again.",
-      imgSrc: SERVICE_PAGE_CARDS.graffitiRemoval,
+      imgSrc: SERVICE_PAGE_CARDS.pressureWashing,
       link: "/services/graffiti-removal",
     },
     {

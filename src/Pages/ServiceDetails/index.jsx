@@ -42,7 +42,6 @@ const SERVICES = {
       { iconClass: "fa6-solid:door-open", title: "Entryways" },
     ],
     image: SERVICE_DETAIL_HERO.pressureWashing,
-    secondaryImage: SERVICE_DETAIL_HERO.pressureWashing2,
     ctaImage: SERVICE_DETAIL_HERO.pressureWashing,
   },
   "graffiti-removal": {
