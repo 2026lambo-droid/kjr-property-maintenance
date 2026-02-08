@@ -26,6 +26,30 @@
   display: flex;
   align-items: center;
   gap: 24px;
+  position: relative;
+  z-index: 10;
+}
+
+/* Mobile: ensure icon buttons are tappable and visible when header is sticky */
+@media screen and (max-width: 1199px) {
+  .cs_main_header_right {
+    position: relative;
+    z-index: 10;
+    flex-shrink: 0;
+  }
+  .cs_header_icon_btn {
+    min-width: 44px;
+    min-height: 44px;
+    padding: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: auto;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .cs_header_icon_btns {
+    gap: 8px;
+  }
 }
 
 .cs_header_form_wrap {
@@ -643,8 +667,10 @@
       line-height: 1.6em;
       padding-top: 80px;
       transition: all 0.4s ease;
+      z-index: 998;
       &.cs_active {
         left: 0vw;
+        z-index: 1001;
       }
     }
     .cs_nav_list {

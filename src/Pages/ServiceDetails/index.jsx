@@ -42,7 +42,7 @@ const SERVICES = {
       { iconClass: "fa6-solid:door-open", title: "Entryways" },
     ],
     image: SERVICE_DETAIL_HERO.pressureWashing,
-    ctaImage: SERVICE_DETAIL_HERO.pressureWashing,
+    ctaImage: SERVICE_DETAIL_HERO.pressureWashing2,
   },
   "graffiti-removal": {
     title: "Graffiti <span>Removal</span>",

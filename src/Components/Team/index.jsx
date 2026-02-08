@@ -121,6 +121,8 @@ export default function TeamMember({ data }) {
                       src={member.img}
                       alt={member.name}
                       className="cs_team_member_img"
+                      loading="lazy"
+                      decoding="async"
                     />
                     <div className="cs_team_member_info">
                       <h3

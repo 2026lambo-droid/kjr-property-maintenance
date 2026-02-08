@@ -11,7 +11,7 @@ export default function ServiceSection1({ data }) {
             <div className="col-lg-6" key={index}>
               <div className="cs_card cs_style_2">
                 <Link to={service.link} className="cs_card_thumb">
-                  <img src={service.imgSrc} alt={service.title} />
+                  <img src={service.imgSrc} alt={service.title} loading="lazy" decoding="async" />
                 </Link>
                 <div className="cs_card_info">
                   <h2 className="cs_card_title cs_fs_32 cs_white_color cs_bold cs_mb_8">

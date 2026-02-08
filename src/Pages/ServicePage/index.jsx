@@ -9,6 +9,9 @@ import {
   CTA_BG,
 } from "../../config/images";
 
+/** Parking lot card: force sweeper image (no window cleaning). Cache-buster ensures updated image loads. */
+const parkingLotCardImage = `${SERVICE_PAGE_CARDS.parkingLot}?v=pl`;
+
 export default function ServicePage() {
   const BreadcrumbsData = {
     backgroundImage: SERVICE_HEADING_BG,
@@ -34,7 +37,7 @@ export default function ServicePage() {
       title: "Parking Lot Sweeping",
       description:
         "Sweeping to remove debris, leaves and litter to maintain a clean and safe appearance. <strong>Regular or Monthly.</strong>",
-      imgSrc: SERVICE_PAGE_CARDS.pressureWashing,
+      imgSrc: parkingLotCardImage,
       link: "/services/parking-lot-sweeping",
     },
     {
@@ -48,7 +51,7 @@ export default function ServicePage() {
       title: "Graffiti Removal",
       description:
         "Quick graffiti removal and cover-up so walls, fences, and surfaces look clean and professional again.",
-      imgSrc: SERVICE_PAGE_CARDS.pressureWashing,
+      imgSrc: SERVICE_PAGE_CARDS.graffitiRemoval,
       link: "/services/graffiti-removal",
     },
     {

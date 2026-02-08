@@ -759,11 +759,18 @@ hr {
 }
 .cs_video_block.cs_style_1 {
   height: 300px;
+  min-height: 280px;
   position: relative;
   border-radius: 20px;
   overflow: hidden;
   &.cs_type_1 {
     height: 380px;
+    min-height: 360px;
+  }
+  &.cs_bg_filed {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 .cs_player_btn {

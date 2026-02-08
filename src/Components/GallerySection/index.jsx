@@ -44,7 +44,7 @@ export default function GallerySection({ data }) {
               }}
               onClick={() => slideTo(index)}
             >
-              <img src={item.imgSrc} alt="" />
+              <img src={item.imgSrc} alt="" loading="lazy" decoding="async" />
               <span className="cs_gallery_info_wrap cs_center">
                 <span className="cs_gallery_info text-center cs_center">
                   <span className="cs_white_color cs_fs_16 cs_bold cs_mb_4 d-block">

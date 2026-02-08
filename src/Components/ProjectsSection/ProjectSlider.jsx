@@ -64,7 +64,7 @@ export default function ProjectSlider({ data }) {
                   <div className="container">
                     <div className="cs_card cs_style_5">
                       <Link to={project.url} className="cs_card_thumb">
-                        <img src={project.image} alt={project.title} />
+                        <img src={project.image} alt={project.title} loading="lazy" decoding="async" />
                       </Link>
                       <div className="cs_card_right">
                         <h2 className="cs_card_title cs_fs_80 mb-0">

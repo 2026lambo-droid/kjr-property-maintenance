@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "logo:convert": "node scripts/convert-logo-pdf.mjs",
     "logo:icon": "node scripts/extract-logo-icon.mjs",
-    "logo:from-pdf": "node scripts/logo-from-pdf.mjs"
+    "logo:from-pdf": "node scripts/logo-from-pdf.mjs",
+    "deploy": "npm run build"
   },
   "dependencies": {
     "@iconify/react": "^6.0.0",

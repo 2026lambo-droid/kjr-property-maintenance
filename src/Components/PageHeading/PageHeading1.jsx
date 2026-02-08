@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function PageHeading1({ data }) {
   return (
     <section
-      className="cs_page_heading cs_style_1 cs_bg_filed_filed cs_heading_bg"
+      className="cs_page_heading cs_style_1 cs_bg_filed cs_heading_bg"
       style={{ backgroundImage: `url(${data.backgroundImage})` }}
     >
       <div className="container">
