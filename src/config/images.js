@@ -25,8 +25,8 @@
 
 const img = (file) => `/assets/img/${file}`;
 
-/** Parking lot sweeping: use commercial/maintenance scene (about_family_sweeper.png is mom & baby; parking_lot_sweeping.png had window cleaners). Use cta_bg until you have a real lot-sweeping photo. */
-const PARKING_LOT_IMAGE = img("cta_bg.png");
+/** Parking lot sweeping: use hero_main only (no window cleaners, no family pic). Replace with real lot-sweeping photo when you have one. */
+const PARKING_LOT_IMAGE = img("hero_main.png");
 
 /** Hero: full viewport slider – commercial property / maintenance */
 export const HERO = {

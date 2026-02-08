@@ -10,6 +10,7 @@ import {
   HERO_SLIDES,
   FEATURE_IMAGE,
   SERVICE_CARDS,
+  HERO,
   CTA_BG,
 } from "../../config/images";
 
@@ -119,7 +120,7 @@ const servicesData = {
       title: "Parking Lot Sweeping",
       subtitle:
         "Sweeping to remove debris, leaves and litter to maintain a clean and safe appearance. <strong>Regular or Monthly.</strong>",
-      image: `${CTA_BG.url}?v=nokid`,
+      image: `${HERO.url}?v=pl`,
       link: "/services/parking-lot-sweeping",
       tags: [
         { label: "Sweeping", url: "/services" },

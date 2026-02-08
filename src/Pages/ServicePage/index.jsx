@@ -6,11 +6,12 @@ import { pageTitle } from "../../helper";
 import {
   SERVICE_HEADING_BG,
   SERVICE_PAGE_CARDS,
+  HERO,
   CTA_BG,
 } from "../../config/images";
 
-/** Parking lot card: always use CTA commercial image (never about_family_sweeper / kid). */
-const parkingLotCardImage = `${CTA_BG.url}?v=nokid`;
+/** Parking lot card: always use hero image (no window cleaners, no kid). */
+const parkingLotCardImage = `${HERO.url}?v=pl`;
 
 export default function ServicePage() {
   const BreadcrumbsData = {
