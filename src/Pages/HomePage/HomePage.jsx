@@ -119,7 +119,7 @@ const servicesData = {
       title: "Parking Lot Sweeping",
       subtitle:
         "Sweeping to remove debris, leaves and litter to maintain a clean and safe appearance. <strong>Regular or Monthly.</strong>",
-      image: SERVICE_CARDS.parkingLot,
+      image: `${CTA_BG.url}?v=nokid`,
       link: "/services/parking-lot-sweeping",
       tags: [
         { label: "Sweeping", url: "/services" },

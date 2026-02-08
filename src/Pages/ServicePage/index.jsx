@@ -9,8 +9,8 @@ import {
   CTA_BG,
 } from "../../config/images";
 
-/** Parking lot card: force sweeper image (no window cleaning). Cache-buster ensures updated image loads. */
-const parkingLotCardImage = `${SERVICE_PAGE_CARDS.parkingLot}?v=pl`;
+/** Parking lot card: always use CTA commercial image (never about_family_sweeper / kid). */
+const parkingLotCardImage = `${CTA_BG.url}?v=nokid`;
 
 export default function ServicePage() {
   const BreadcrumbsData = {
