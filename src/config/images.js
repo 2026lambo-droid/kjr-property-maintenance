@@ -16,11 +16,10 @@
  * - hero_main.png      Hero slider / page headings – commercial property or crew
  * - cta_bg.png         CTA section background – commercial/maintenance scene
  * - day_porter.png, day_porter_2.png  Day porter / cleaning crew (two professional photos)
- * - parking_lot_sweeping.png  Parking lot sweeping. If file shows window cleaning, use about_family_sweeper.png (see PARKING_LOT_IMAGE).
- * - pressure_washing.png, pressure_washing_2.png, pressure_washing_3.png  Pressure washing ONLY (these 3 images only).
+ * - pressure_washing.png, pressure_washing_2.png, pressure_washing_3.png  Pressure washing ONLY.
  * - graffiti_services.png    Graffiti removal
  * - junk_removal.png   Junk removal / lot cleanup
- * - about_family_sweeper.png  Feature/about – crew or sweeper truck
+ * DO NOT USE: parking_lot_sweeping.png, about_family_sweeper.png (window cleaning / wrong content on live).
  */
 
 const img = (file) => `/assets/img/${file}`;
@@ -76,13 +75,13 @@ export const SERVICE_PAGE_CARDS = {
   junkRemoval: img("junk_removal.png"),
 };
 
-/** Feature / Why Choose section – maintenance crew / on-site */
-export const FEATURE_IMAGE = img("about_family_sweeper.png");
+/** Feature / Why Choose section – use hero (no window cleaning assets) */
+export const FEATURE_IMAGE = img("hero_main.png");
 
 /** About section / video block (e.g. project pages) */
-export const ABOUT_IMAGE = img("about_family_sweeper.png");
-/** About page: family / first sweeper truck */
-export const ABOUT_PAGE_IMAGE = img("about_family_sweeper.png");
+export const ABOUT_IMAGE = img("hero_main.png");
+/** About page */
+export const ABOUT_PAGE_IMAGE = img("hero_main.png");
 
 /** Service detail hero images */
 export const SERVICE_DETAIL_HERO = {
@@ -122,23 +121,23 @@ export const BLOG_POST_IMAGES = [img("day_porter.png"), img("day_porter_2.png"),
 export const FAQ_IMAGE = img("day_porter.png");
 export const FAQ_IMAGE_2 = img("pressure_washing.png");
 
-/** Team section – maintenance / crew relevant */
+/** Team section – no window cleaning assets */
 export const TEAM_IMAGES = [
-  img("about_family_sweeper.png"),
+  img("hero_main.png"),
   img("day_porter.png"),
   img("day_porter_2.png"),
   img("pressure_washing.png"),
-  img("parking_lot_sweeping.png"),
+  img("hero_main.png"),
 ];
 
-/** Project thumbs – pressure washing slots use only the 3 pressure washing images. */
+/** Project thumbs – no window cleaning assets (parking_lot_sweeping, about_family_sweeper). */
 export const PROJECT_THUMBS = [
   img("day_porter.png"),
   img("pressure_washing.png"),
   img("pressure_washing_2.png"),
   img("pressure_washing_3.png"),
   img("junk_removal.png"),
-  img("about_family_sweeper.png"),
+  img("hero_main.png"),
   img("day_porter_2.png"),
   PARKING_LOT_IMAGE,
   img("pressure_washing.png"),
