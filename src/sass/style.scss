@@ -38,7 +38,7 @@
 @use "shortcode/team";
 @use "shortcode/card";
 
-/* First gallery row: same sizing as original template */
+/* First gallery row: same sizing as original template – heights from config (394, 383, 287, 190, 480px) */
 .cs_gallery.cs_style_2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -51,7 +51,7 @@
     grid-template-columns: 1fr;
   }
   .cs_gallery_item {
-    min-height: 280px;
+    min-height: 0; /* let inline height from config win (e.g. 190px, 287px) */
     border-radius: 20px;
     overflow: hidden;
     cursor: pointer;
@@ -118,9 +118,6 @@
   &:hover {
     &::before {
       opacity: 0.75;
-      border-radius: 20px;
-    }
-    img {
       border-radius: 20px;
     }
     .cs_gallery_info {

@@ -39,7 +39,7 @@ function ForgotPassword() {
             </h1>
             <form onSubmit={handleSubmit}>
               <div className="cs_mb_15">
-                <label>Your registered Email Address*</label>
+                <label>Your registered email address*</label>
                 <input
                   type="email"
                   className="cs_form_field"

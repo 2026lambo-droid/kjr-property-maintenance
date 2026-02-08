@@ -18,6 +18,7 @@ export default function GallerySection({ data }) {
               className="cs_gallery_item cs_bg_filed"
               style={{
                 backgroundImage: `url(${item.imageSrc})`,
+                height: item.height || "280px",
               }}
               key={index}
               onClick={() => slideTo(index)}

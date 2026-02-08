@@ -215,34 +215,40 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  width: 56px;
-  height: 56px;
-  max-width: 64px;
+  width: 72px;
+  height: 72px;
+  max-width: 80px;
   text-decoration: none;
 }
 
-/* Brand logo: icon + name (KJR + Property Maintenance) */
+/* Brand logo: icon + name (KJR + Property Maintenance) — larger, detailed icon that flows with the page */
 .cs_logo_icon_and_text {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 14px;
   text-decoration: none;
+  transition: opacity 0.2s ease;
+  &:hover {
+    opacity: 0.92;
+  }
 }
 .cs_logo_icon_wrap {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  width: 56px;
-  height: 56px;
-  max-width: 64px;
+  width: 72px;
+  height: 72px;
+  max-width: 80px;
+  min-width: 72px;
 }
 .cs_logo_icon_img {
   display: block;
   width: auto;
   height: 100%;
-  max-width: 64px;
-  max-height: 56px;
+  max-width: 80px;
+  max-height: 72px;
+  min-height: 56px;
   object-fit: contain;
   object-position: center;
   background: transparent;
@@ -251,53 +257,60 @@
   display: none;
   width: auto;
   height: 100%;
-  max-width: 64px;
-  max-height: 56px;
+  max-width: 80px;
+  max-height: 72px;
   object-fit: contain;
 }
 .cs_logo_icon_fallback_show {
   display: block !important;
 }
 .cs_logo_wordmark {
-  font-size: 24px;
+  font-family: var(--brand-font);
+  font-size: 26px;
   font-weight: 700;
   letter-spacing: 0.5px;
   line-height: 1.2;
 }
 .cs_logo_tagline {
-  font-size: 13px;
+  font-family: var(--brand-font);
+  font-size: 14px;
   font-weight: 500;
-  letter-spacing: 0.3px;
-  opacity: 0.9;
-  line-height: 1.2;
+  letter-spacing: 0.35px;
+  opacity: 0.92;
+  line-height: 1.25;
 }
 @media (max-width: 575px) {
   .cs_logo_icon_only {
-    width: 48px;
-    height: 48px;
-    max-width: 52px;
+    width: 56px;
+    height: 56px;
+    max-width: 60px;
+  }
+  .cs_logo_icon_and_text {
+    gap: 10px;
   }
   .cs_logo_icon_wrap {
-    width: 48px;
-    height: 48px;
-    max-width: 52px;
+    width: 56px;
+    height: 56px;
+    max-width: 60px;
+    min-width: 56px;
   }
   .cs_logo_icon_img,
   .cs_logo_icon_fallback {
-    max-width: 52px;
-    max-height: 48px;
+    max-width: 60px;
+    max-height: 56px;
+    min-height: 44px;
   }
   .cs_logo_wordmark {
-    font-size: 20px;
+    font-size: 21px;
   }
   .cs_logo_tagline {
     font-size: 12px;
   }
 }
 
-/* Main header (dark/transparent): icon and text white */
+/* Main header (dark/transparent): icon is light on transparent — no filter so it stays visible */
 .cs_site_header.cs_style_1:not(.cs_color_1) .cs_logo_icon_img {
-  filter: brightness(0) invert(1);
+  filter: none;
 }
 .cs_site_header.cs_style_1:not(.cs_color_1) .cs_logo_icon_fallback {
   color: var(--white-color);
@@ -307,15 +320,20 @@
   color: var(--white-color);
 }
 
-/* Light header variant (cs_color_1): icon and text dark */
+/* Light header variant (cs_color_1): icon and text dark for contrast on light backgrounds */
 .cs_site_header.cs_style_1.cs_color_1 .cs_logo_icon_img {
-  filter: none;
+  filter: invert(1);
 }
 .cs_site_header.cs_style_1.cs_color_1 .cs_logo_icon_fallback {
   color: var(--heading-color);
 }
 .cs_site_header.cs_style_1.cs_color_1 .cs_logo_icon_and_text .cs_logo_wordmark,
 .cs_site_header.cs_style_1.cs_color_1 .cs_logo_icon_and_text .cs_logo_tagline {
+  color: var(--heading-color);
+}
+/* Light header: nav and icon buttons dark so visible on light background */
+.cs_site_header.cs_style_1.cs_color_1 .cs_nav .cs_nav_list > li > a,
+.cs_site_header.cs_style_1.cs_color_1 .cs_header_icon_btn {
   color: var(--heading-color);
 }
 .cs_main_header {

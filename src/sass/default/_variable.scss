@@ -14,6 +14,8 @@
   --accent-hover: #9a7a32;
   --heading-font: "Plus Jakarta Sans", sans-serif;
   --body-font: "DM Sans", sans-serif;
+  /* Brand font for "KJR Property Maintenance" – matches logo (KJR Logo Design v3 BW). Swap if PDF uses a different font. */
+  --brand-font: "Oswald", sans-serif;
   /* Image overlays – consistent depth (match primary) */
   --overlay-hero: rgba(36, 51, 34, 0.55);
   --overlay-cta: rgba(36, 51, 34, 0.65);

@@ -70,7 +70,7 @@ export default function Footer() {
                         e.target.nextElementSibling?.classList.add('cs_footer_logo_icon_fallback_show');
                       }}
                     />
-                    <svg className="cs_footer_logo_icon_fallback" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" width="52" height="52" aria-hidden>
+                    <svg className="cs_footer_logo_icon_fallback" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" width="64" height="64" aria-hidden>
                       <circle cx="32" cy="32" r="28" fill="currentColor" />
                     </svg>
                   </span>

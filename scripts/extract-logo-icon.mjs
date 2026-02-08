@@ -49,16 +49,22 @@ for (let i = 0; i < w * h; i++) {
   out[i * 4 + 3] = isWhite ? 0 : 255;
 }
 
+// Export at 2x resolution for sharp rendering on retina/high-DPI (72px display → 144px+ source)
+const scale = 2;
+const outW = w * scale;
+const outH = h * scale;
+
 await sharp(out, { raw: { width: w, height: h, channels: 4 } })
-  .png()
+  .resize(outW, outH, { kernel: sharp.kernel.lanczos3 })
+  .png({ compressionLevel: 6 })
   .toFile(iconPngPath);
-console.log('Saved:', iconPngPath);
+console.log('Saved:', iconPngPath, `(${outW}x${outH})`);
 
 const pngBuffer = readFileSync(iconPngPath);
 const base64 = pngBuffer.toString('base64');
 const svg = `<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 ${w} ${h}" fill="none" aria-hidden="true" role="img">
-  <image width="${w}" height="${h}" href="data:image/png;base64,${base64}" xlink:href="data:image/png;base64,${base64}"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 ${outW} ${outH}" fill="none" aria-hidden="true" role="img">
+  <image width="${outW}" height="${outH}" href="data:image/png;base64,${base64}" xlink:href="data:image/png;base64,${base64}"/>
 </svg>`;
 writeFileSync(iconSvgPath, svg);
 console.log('Saved:', iconSvgPath);

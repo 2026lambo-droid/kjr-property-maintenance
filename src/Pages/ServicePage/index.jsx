@@ -33,7 +33,7 @@ export default function ServicePage() {
     {
       title: "Parking Lot Sweeping",
       description:
-        "Regular sweeping of parking lots and driveways to remove debris, leaves, and litter and maintain a clean, safe appearance.",
+        "Sweeping to remove debris, leaves and litter to maintain a clean and safe appearance. <strong>Regular or Monthly.</strong>",
       imgSrc: SERVICE_PAGE_CARDS.parkingLot,
       link: "/services/parking-lot-sweeping",
     },

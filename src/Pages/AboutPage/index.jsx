@@ -22,7 +22,7 @@ const BreadcrumbsData = {
 };
 
 const aboutUsData = {
-  title: "About <span>KJR Property Maintenance</span>",
+  title: "About <span class=\"cs_brand_font\">KJR Property Maintenance</span>",
   introduction:
     "KJR Property Maintenance provides commercial property maintenance services in San Jose and the greater Bay Area. We focus on keeping commercial buildings, retail centers, HOAs, and common areas clean, safe, and well-maintained. Our mission is simple: deliver reliable, professional maintenance so property managers and owners can focus on what matters most.",
   introduction1:
@@ -52,7 +52,7 @@ const valueData = {
 };
 
 const featureData = {
-  sectionTitle: "Why Choose <span>KJR Property Maintenance</span>",
+  sectionTitle: "Why Choose <span class=\"cs_brand_font\">KJR Property Maintenance</span>",
   sectionSubtitle:
     "We combine experience, reliability, and local knowledge to deliver maintenance you can count on.",
   buttonText: "Request a Quote",

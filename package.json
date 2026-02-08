@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "logo:convert": "node scripts/convert-logo-pdf.mjs",
-    "logo:icon": "node scripts/extract-logo-icon.mjs"
+    "logo:icon": "node scripts/extract-logo-icon.mjs",
+    "logo:from-pdf": "node scripts/logo-from-pdf.mjs"
   },
   "dependencies": {
     "@iconify/react": "^6.0.0",

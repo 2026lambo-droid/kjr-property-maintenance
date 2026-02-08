@@ -51,7 +51,7 @@ export default function ContactPage() {
     buttonLink: "/services",
   };
 
-  pageTitle("Contact");
+  pageTitle("Contact | KJR Property Maintenance");
   return (
     <>
       <PageHeading data={BreadcrumbsData} />

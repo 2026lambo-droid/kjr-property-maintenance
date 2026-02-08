@@ -105,7 +105,7 @@ const blogData = {
     title: "Maintain Your Property’s Value",
     description: `Well-maintained common areas and clean lobbies and restrooms support tenant satisfaction and help protect your property’s reputation and value. Regular day porter service is an investment in how your property looks and feels every day.`,
   },
-  formTitle: "Leave A Reply",
+  formTitle: "Leave a Reply",
   formNote:
     "Your email address will not be published. Required fields are marked *",
 };

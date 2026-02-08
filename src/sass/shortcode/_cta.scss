@@ -30,6 +30,8 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  border-radius: 20px;
+  overflow: hidden;
   &.cs_type_1 {
     min-height: 400px;
     height: 100%;

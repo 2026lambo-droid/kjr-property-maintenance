@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Icon } from "@iconify/react/dist/iconify.js";
 
 const data = {
@@ -23,18 +23,13 @@ const data = {
 };
 
 const Header = () => {
+  const { pathname } = useLocation();
   const [isShowMobileMenu, setIsShowMobileMenu] = useState(false);
-  const [openMobileSubmenuIndex, setOpenMobileSubmenuIndex] = useState([]);
   const [isSticky, setIsSticky] = useState();
   const [isSearchActive, setIsSearchActive] = useState(false);
 
-  const handleOpenMobileSubmenu = (index) => {
-    if (openMobileSubmenuIndex.includes(index)) {
-      setOpenMobileSubmenuIndex((prev) => prev.filter((f) => f !== index));
-    } else {
-      setOpenMobileSubmenuIndex((prev) => [...prev, index]);
-    }
-  };
+  // Use light header (dark logo/text) on pages with light content at top (e.g. day porter, about, contact)
+  const isLightTopPage = pathname !== "/";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -58,7 +53,7 @@ const Header = () => {
       <header
         className={`cs_site_header cs_style_1 cs_sticky_header ${
           isSticky ? isSticky : ""
-        }`}
+        } ${isLightTopPage ? "cs_color_1" : ""}`}
       >
         <div className="cs_main_header">
           <div className="container">
@@ -75,7 +70,7 @@ const Header = () => {
                         e.target.nextElementSibling?.classList.add('cs_logo_icon_fallback_show');
                       }}
                     />
-                    <svg className="cs_logo_icon_fallback" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" width="56" height="56" aria-hidden>
+                    <svg className="cs_logo_icon_fallback" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" width="72" height="72" aria-hidden>
                       <circle cx="32" cy="32" r="28" fill="currentColor" />
                     </svg>
                   </span>

@@ -44,6 +44,7 @@
     align-items: center;
   }
   .cs_hero_eyebrow {
+    font-family: var(--brand-font);
     font-size: 0.95rem;
     font-weight: 600;
     letter-spacing: 0.12em;
@@ -223,12 +224,19 @@
       height: 100%;
     }
   }
+  .cs_hero_bg .cs_slide,
+  .cs_hero_bg .cs_slider,
+  .cs_hero_bg .cs_slider_wrapper {
+    overflow: hidden;
+  }
   .cs_slide {
     height: 100%;
     img {
       height: 100%;
       width: 100%;
       object-fit: cover;
+      object-position: center;
+      display: block;
     }
   }
 }

@@ -158,12 +158,15 @@
     overflow: hidden;
     position: relative;
     display: block;
+    height: 320px;
     min-height: 320px;
     img {
-      min-height: inherit;
+      width: 100%;
+      height: 100%;
       object-fit: cover;
       object-position: center;
-      width: 100%;
+      border-radius: 20px;
+      display: block;
       transition: transform 0.5s ease;
     }
     &::before {
@@ -177,10 +180,6 @@
       top: 0;
       transition: all 0.4s ease;
       opacity: 0;
-    }
-    img {
-      width: 100%;
-      border-radius: inherit;
     }
   }
   &:hover .cs_card_thumb img {
@@ -372,11 +371,19 @@
   .cs_card_thumb {
     height: 480px;
     width: 100%;
+    overflow: hidden;
     @media (max-width: 1199px) {
       height: 400px;
     }
     @media (max-width: 991px) {
       margin-bottom: 20px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
     }
   }
   .cs_card_info_list {

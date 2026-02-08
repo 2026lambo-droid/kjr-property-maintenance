@@ -1,6 +1,34 @@
 # KJR Logo
 
-Your logo PDF is saved here as **kjr-logo-source.pdf** (Bay Area Cleaning Services KJR Logo Design v3 BW).
+**Exact source PDF:** **KJR-Logo-Design-v3-BW.pdf** (Bay Area Cleaning Services KJR Logo Design v3 BW). Do not redesign or modify the logo; use as-is.
+
+## Production icon from PDF (exact source, transparent background)
+
+Use the PDF as the **exact** source. No redesign, no stylize, no simplification.
+
+1. Open **KJR-Logo-Design-v3-BW.pdf** in Preview (or Acrobat).
+2. Export **only the first page** as PNG:
+   - **Preview:** File → Export → PNG. Use a high resolution (e.g. 2× or 3× scale) for razor-sharp result.
+   - Save as: **kjr-logo-source-from-pdf.png** in this folder (`public/assets/img/`).
+3. From project root run:
+   ```bash
+   npm run logo:from-pdf
+   ```
+   Or with explicit path:
+   ```bash
+   node scripts/logo-from-pdf.mjs public/assets/img/kjr-logo-source-from-pdf.png
+   ```
+
+This script:
+
+- Leaves the logo **exactly as-is** (shapes, proportions, spacing, details).
+- Makes the **background fully transparent** (alpha).
+- Trims transparent edges so the file is production-ready.
+- Outputs **kjr-icon.png** (high-res PNG, transparent background) for header, footer, and sidebar.
+
+No enhancements, smoothing, or creative changes. Color values unchanged; sharp edges only.
+
+---
 
 ## Full logo (PNG)
 

@@ -58,7 +58,7 @@ const valueData = {
 };
 
 const featureData = {
-  sectionTitle: "Why Choose <span>KJR Property Maintenance</span>",
+  sectionTitle: "Why Choose <span class=\"cs_brand_font\">KJR Property Maintenance</span>",
   sectionSubtitle:
     "We combine experience, reliability, and local knowledge to deliver maintenance you can count on.",
   buttonText: "Request a Quote",
@@ -118,7 +118,7 @@ const servicesData = {
     {
       title: "Parking Lot Sweeping",
       subtitle:
-        "Regular sweeping of parking lots and driveways to remove debris, leaves, and litter and maintain a clean, safe appearance.",
+        "Sweeping to remove debris, leaves and litter to maintain a clean and safe appearance. <strong>Regular or Monthly.</strong>",
       image: SERVICE_CARDS.parkingLot,
       link: "/services/parking-lot-sweeping",
       tags: [
@@ -167,7 +167,7 @@ const servicesData = {
 };
 
 const aboutData = {
-  title: "About <span>KJR Property Maintenance</span>",
+  title: "About <span class=\"cs_brand_font\">KJR Property Maintenance</span>",
   subtitle:
     "We're a local team dedicated to keeping your commercial property in top shape.",
   content:

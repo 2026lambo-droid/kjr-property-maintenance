@@ -17,6 +17,7 @@ const SERVICES = {
       { iconClass: "fa6-solid:handshake", title: "Reliable, responsive" },
     ],
     image: SERVICE_DETAIL_HERO.dayPorter,
+    ctaImage: SERVICE_DETAIL_HERO.dayPorter2,
   },
   "parking-lot-sweeping": {
     title: "Parking Lot <span>Sweeping</span>",
@@ -42,6 +43,7 @@ const SERVICES = {
     ],
     image: SERVICE_DETAIL_HERO.pressureWashing,
     secondaryImage: SERVICE_DETAIL_HERO.pressureWashing2,
+    ctaImage: SERVICE_DETAIL_HERO.pressureWashing,
   },
   "graffiti-removal": {
     title: "Graffiti <span>Removal</span>",
@@ -122,7 +124,7 @@ export default function ServiceDetailsPage() {
     cta: {
       buttonUrl: "/contact",
       buttonText: "Request a Quote",
-      bgImage: CTA_BG.url,
+      bgImage: service.ctaImage || CTA_BG.url,
     },
     description: service.description,
     iconBoxes: service.iconBoxes,
