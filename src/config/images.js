@@ -19,13 +19,17 @@
  * - pressure_washing.png, pressure_washing_2.png, pressure_washing_3.png  Pressure washing ONLY.
  * - graffiti_services.png    Graffiti removal
  * - junk_removal.png   Junk removal / lot cleanup
- * - parking_lot_sweeping.png  Parking lot sweeping (replace file if content is wrong). about_family_sweeper.png not used.
+ * - home_family.png          Home page only (family in parking area)
+ * - cta_bg_trucks.png        Parking lot / street sweeping service (truck)
  */
 
 const img = (file) => `/assets/img/${file}`;
 
-/** Parking lot sweeping: use parking_lot_sweeping.png so image is never missing on live. Replace file content if needed. */
-const PARKING_LOT_IMAGE = img("parking_lot_sweeping.png") + "?v=pl";
+/** Parking lot / street sweeping service: truck only (never family). */
+const PARKING_LOT_IMAGE = img("cta_bg_trucks.png") + "?v=pl";
+
+/** Main-page parking lot card: same parking lot asset as everywhere else (README: parking_lot_sweeping.png). */
+export const PARKING_LOT_TRUCK_HOME = img("parking_lot_sweeping.png") + "?v=plcard";
 
 /** Hero: full viewport slider – commercial property / maintenance */
 export const HERO = {
@@ -34,10 +38,10 @@ export const HERO = {
   url: img("hero_main.png"),
 };
 
-/** Hero slider backgrounds – all property-maintenance / commercial (4 slides like original) */
+/** Hero slider backgrounds – page 1 only. Second slide = family image (home only). */
 export const HERO_SLIDES = [
   img("hero_main.png"),
-  img("cta_bg.png"),
+  img("home_family.png"),
   img("hero_main.png"),
   img("cta_bg.png"),
 ];

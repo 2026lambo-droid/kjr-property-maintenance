@@ -202,13 +202,13 @@ export default function HeroSection({ data }) {
                 >
                   <div className="cs_slider_number cs_style_1 cs_white_color cs_bold">
                     <>
-                      <span className="cs_current_number" data-number="${i}">
+                      <span className="cs_current_number" data-number={currentSlide}>
                         <span>0{currentSlide}</span>
                       </span>{" "}
                       <span className="cs_slider_number_seperator" />{" "}
                       <span
                         className="cs_total_numbers"
-                        data-number="${slick.slideCount}"
+                        data-number={data.backgrounds.length}
                       >
                         <span>0{data.backgrounds.length}</span>
                       </span>
