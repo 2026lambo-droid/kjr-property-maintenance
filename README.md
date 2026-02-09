@@ -18,3 +18,20 @@ The `public/_redirects` file is copied into `dist/` so that direct links and ref
 1. **If using Cloudflare Pages with Git:** In the dashboard go to your project → **Settings** → **Builds & deployments**. Set **Build command** to `npm run build` and **Build output directory** to `dist` (not `build` or blank). Save, then trigger a new deployment (e.g. push a commit or “Retry deployment”).
 2. **If uploading manually:** Run `npm run build` locally, then upload the **entire contents** of the `dist/` folder (drag the contents, not the project root). Old deployments often happen when the wrong folder is uploaded.
 3. **Verify:** After deploy, open `https://yoursite.com/build-info.txt`. It should show the date/time of the last build. If it’s old or 404, the wrong build is being deployed or the output directory is wrong.
+
+### Deploy from Cursor (one command)
+
+If you use **Cloudflare Pages**, you can deploy from Cursor's terminal so the live site matches your preview:
+
+1. **First time only:** Log in and create the project (if needed):
+   ```bash
+   npx wrangler login
+   npx wrangler pages project create YOUR_PROJECT_NAME
+   ```
+   Replace `YOUR_PROJECT_NAME` with your Cloudflare Pages project name.
+
+2. **Deploy** (builds and uploads `dist/` to Cloudflare):
+   ```bash
+   npm run deploy:live
+   ```
+   Your live site will match the Cursor preview.

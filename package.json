@@ -11,7 +11,9 @@
     "logo:convert": "node scripts/convert-logo-pdf.mjs",
     "logo:icon": "node scripts/extract-logo-icon.mjs",
     "logo:from-pdf": "node scripts/logo-from-pdf.mjs",
-    "deploy": "npm run build"
+    "deploy": "npm run build",
+    "deploy:live": "npm run build && npx wrangler pages deploy dist",
+    "preview:build": "npm run build && npm run preview"
   },
   "dependencies": {
     "@iconify/react": "^6.0.0",

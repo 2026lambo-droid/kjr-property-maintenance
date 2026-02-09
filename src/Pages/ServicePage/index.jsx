@@ -6,12 +6,8 @@ import { pageTitle } from "../../helper";
 import {
   SERVICE_HEADING_BG,
   SERVICE_PAGE_CARDS,
-  HERO,
   CTA_BG,
 } from "../../config/images";
-
-/** Parking lot card: always use hero image (no window cleaners, no kid). */
-const parkingLotCardImage = `${HERO.url}?v=pl`;
 
 export default function ServicePage() {
   const BreadcrumbsData = {
@@ -38,7 +34,7 @@ export default function ServicePage() {
       title: "Parking Lot Sweeping",
       description:
         "Sweeping to remove debris, leaves and litter to maintain a clean and safe appearance. <strong>Regular or Monthly.</strong>",
-      imgSrc: parkingLotCardImage,
+      imgSrc: SERVICE_PAGE_CARDS.parkingLot,
       link: "/services/parking-lot-sweeping",
     },
     {
