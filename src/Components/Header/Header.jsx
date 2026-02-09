@@ -31,6 +31,11 @@ const Header = () => {
   // Use light header (dark logo/text) on pages with light content at top (e.g. day porter, about, contact)
   const isLightTopPage = pathname !== "/";
 
+  // Close mobile menu when route changes (fixes mobile: menu blocking new page)
+  useEffect(() => {
+    setIsShowMobileMenu(false);
+  }, [pathname]);
+
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
@@ -59,7 +64,12 @@ const Header = () => {
           <div className="container">
             <div className="cs_main_header_in">
               <div className="cs_main_header_left">
-                <Link className="cs_site_branding cs_logo_icon_and_text" to={data.logoUrl} aria-label="KJR Property Maintenance home">
+                <Link
+                  className="cs_site_branding cs_logo_icon_and_text"
+                  to={data.logoUrl}
+                  aria-label="KJR Property Maintenance home"
+                  onClick={() => setIsShowMobileMenu(false)}
+                >
                   <span className="cs_logo_icon_wrap">
                     <img
                       src="/assets/img/kjr-icon.png"
@@ -93,7 +103,12 @@ const Header = () => {
                             item.children ? "menu-item-has-children" : ""
                           }
                         >
-                          <Link to={item.href}>{item.label}</Link>
+                          <Link
+                            to={item.href}
+                            onClick={() => setIsShowMobileMenu(false)}
+                          >
+                            {item.label}
+                          </Link>
                         </li>
                       ))}
                     </ul>
