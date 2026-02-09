@@ -19,13 +19,13 @@
  * - pressure_washing.png, pressure_washing_2.png, pressure_washing_3.png  Pressure washing ONLY.
  * - graffiti_services.png    Graffiti removal
  * - junk_removal.png   Junk removal / lot cleanup
- * DO NOT USE: parking_lot_sweeping.png, about_family_sweeper.png (window cleaning / wrong content on live).
+ * - parking_lot_sweeping.png  Parking lot sweeping (replace file if content is wrong). about_family_sweeper.png not used.
  */
 
 const img = (file) => `/assets/img/${file}`;
 
-/** Parking lot sweeping: use hero_main only (no window cleaners, no family pic). Replace with real lot-sweeping photo when you have one. */
-const PARKING_LOT_IMAGE = img("hero_main.png");
+/** Parking lot sweeping: use parking_lot_sweeping.png so image is never missing on live. Replace file content if needed. */
+const PARKING_LOT_IMAGE = img("parking_lot_sweeping.png") + "?v=pl";
 
 /** Hero: full viewport slider – commercial property / maintenance */
 export const HERO = {
